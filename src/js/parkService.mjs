@@ -167,7 +167,7 @@ const park = {
     },
     {
       credit: "NPS/Dave Krueger",
-      title: "Yellowstone River",
+      title: "Ye.llowstone River",
       altText: "A greenish river meanders through a hilly river valley.",
       caption: "The Yellowstone River near Tower Fall",
       url: "https://www.nps.gov/common/uploads/structured_data/8AB8F1A3-D1A0-A6FB-E8E5CAA8B2937264.jpeg"
