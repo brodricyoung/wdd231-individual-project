@@ -1,4 +1,6 @@
 
+import "../css/style.css"; // we can do this type of import because we are using Vite
+import "../css/home.css";
 
 function setParkIntro(data) {
   document.querySelector(".intro").innerHTML = `<h1>${data.fullName}</h1><p>${data.description}</p>`;

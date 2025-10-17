@@ -43,21 +43,9 @@ export async function getInfoLinks(data) {
 }
 
 
-export async function getVisitorCenterData() {
-  const options = {
-    method: "GET",
-    headers: {
-      "X-Api-Key": apiKey
-    }
-  };
-  let data = {};
-  const response = await fetch(baseUrl + "visitorcenters" + "?parkCode=yell", options);
-  // check to make sure the reponse was ok.
-  if (response.ok) {
-    // convert to JSON
-    data = await response.json();
-  } else throw new Error("response not ok");
-  return data.data[0];
+export async function getVisitorCenterData(parkCode) {
+  const visitorCenterData = await getJson(`visitorcenters?parkCode=${parkCode}`);
+  return visitorCenterData.data;
 }
 
 

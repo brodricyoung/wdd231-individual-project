@@ -1,4 +1,8 @@
 
+main {
+  padding: 1rem;
+}
+
 /* alerts */
 .alerts > ul {
   list-style: none;
@@ -23,4 +27,44 @@
   width: 30px;
   margin: 0.25em;
   flex: 0 0 auto;
+}
+
+
+/* visitor centers */
+.visitor > details > ul {
+  list-style: none;
+  padding: 0;
+}
+.visitor > details li {
+  border-bottom: 1px solid var(--bs-grey-3);
+}
+.visitor > details {
+  padding: 1rem;
+  border: 1px solid var(--bs-grey-3);;
+}
+
+/* activities */
+.activities > details {
+  padding: 1rem;
+  border: 1px solid var(--bs-grey-3);;
+}
+
+/* arrow marker  */
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::after {
+  content: '';
+  width: 18px;
+  height: 10px;
+  background: url('https://byui-cse.github.io/wdd231-course/images/arrow.svg');
+  background-size: cover;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
 }
