@@ -4,7 +4,7 @@ import "../css/conditions.css";
 
 import { getParkData, getParkAlerts, getVisitorCenterData } from "./parkService.mjs";
 import { alertTemplate, visitorCenterTemplate, activitiesTemplate } from "./templates.mjs";
-import { setHeaderFooter } from "./setHeaderFooter.mjs";
+import setHeaderFooter from "./setHeaderFooter.mjs";
 
 function setAlerts(alerts) {
   const alertsContainer = document.querySelector(".alerts > ul");
